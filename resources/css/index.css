@@ -141,3 +141,33 @@ body {
 .jumbotron {
     margin-top: 0px;
 }
+
+
+.search-field {
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+
+.restaurant {
+    width: 400px;   
+}
+
+.location {
+    width: 400px;
+}
+
+.search-btn {
+    height: 50px;
+    width: 100px;
+    background: lightgreen;
+    border: none;
+    color:#000;
+    border-radius: 25px;
+}
+
+input{
+    text-align:center;
+ }
