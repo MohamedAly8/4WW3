@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="resources/css/login.css">
+        <!-- Load an icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+
+            <!-- Navigation Bar -->
+            <body data-spy="scroll" data-target=".navbar" data-offset="50"></body>
+            <div class="mynav">
+                <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom">
+                    <!-- Name of Website with Logo -->
+                    <a class="navbar-brand" href="index.html">ChewReviews<i style="margin-left: 10px;"class="fa fa-cutlery" aria-hidden="true"></i></a>
+                   <!-- <a class="navbar-left"><img src="resources/icon.png" width="30" height="40"></a>  -->
+                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          <!-- Active links to the different pages on the website -->
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Search</a>
+                        </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Form</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Register</a>
+                          </li>
+                      </ul>
+                      <!-- Search Form -->
+    
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                    </div>
+                  </nav>
+            </div>
+
+  
+    <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required>
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required>
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <input type="submit" value="Login">
+          <div class="signup_link">
+            Not a member? <a href="#">Signup</a>
+          </div>
+        </form>
+      </div>
+    
+
+
+
+</body>
+</html>
