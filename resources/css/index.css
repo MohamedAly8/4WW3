@@ -120,12 +120,15 @@ body {
 
 .hero .btn {
     display: blcok;
-    width: 200px;
-    background-color: azure;
-    border: 3px solid black;
+    width: 300px;
+    background: lightgreen;
+    border: none;
+    border-radius: 25px;
+
+    font-size: large;
 
     padding: 1em;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 
@@ -134,12 +137,20 @@ body {
 }
 
 .hero .btn:hover {
-    transition-duration: 0.5s;
-    background-color: lightgreen;
+    transition-duration: 0.2s;
+    background-color: darkcyan;
+    cursor: pointer;
+    border: none;
+    
 }
 
 .jumbotron {
     margin-top: 0px;
+}
+
+.or {
+    margin-top:5%; 
+    font-size: 40px;
 }
 
 
@@ -166,8 +177,15 @@ body {
     border: none;
     color:#000;
     border-radius: 25px;
+    transition-duration: 0.2s;
+}
+
+.search-btn:hover {
+    background: darkcyan;
+    cursor: pointer;
 }
 
 input{
     text-align:center;
  }
+
