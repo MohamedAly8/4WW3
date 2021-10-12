@@ -1,5 +1,5 @@
 .mynav {
-        background-color: #065306;
+        background-color: #14aa57;
         position: relative;
         box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ footer {
 }
 
 .fa-cutlery:hover {
-    color: green;
+    color:black;
 }
 
 footer h6{

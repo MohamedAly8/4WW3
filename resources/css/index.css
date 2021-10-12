@@ -1,9 +1,7 @@
 .mynav {
-    background-color: #158615;
+    background-color: #14aa57;
     position: relative;
     box-sizing: border-box;
-    margin: 0;
-    border: 0;
 }
 
 footer {
@@ -21,8 +19,7 @@ font-size: 3em;
 }
 
 .fa-cutlery:hover {
-color: green;
-transition-duration: 0.2s;
+color:black;
 }
 
 footer h6{
@@ -51,7 +48,6 @@ color: yellow
 
 .navbar {
 background-color: transparent !important;
-margin-bottom: 0;
 }
 
 .navbar a {
