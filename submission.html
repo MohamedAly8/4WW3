@@ -7,11 +7,11 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="resources/css/login.css">
+        <link rel="stylesheet" href="resources/css/submission.css">
         <!-- Load an icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Login</title>
+    <title>Sample Results</title>
 </head>
 <body>
 
@@ -49,28 +49,42 @@
               </div>
             </header>
 
-  <section>
-    <div class="center">
-        <h1>Login</h1>
-        <form method="post">
-          <div class="txt_field">
-            <input type="text" required>
-            <span></span>
-            <label>Username</label>
-          </div>
-          <div class="txt_field">
-            <input type="password" required>
-            <span></span>
-            <label>Password</label>
-          </div>
-          <div class="pass">Forgot Password?</div>
-          <input type="submit" value="Login">
-          <div class="signup_link">
-            Not a member? <a href="#">Signup</a>
-          </div>
-        </form>
-      </div>
-    </section>
+            <h1>The More The Merrier</h1>
+
+            <div class="center">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Restaurant Name</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Description</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Description">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Latitude Coordinates</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="38.8951">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Longitude Coordinates</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="-77.0364">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Upload Image(s)</label>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload Image" name="submit">
+                  </div>
+                  
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+
 
 
 
