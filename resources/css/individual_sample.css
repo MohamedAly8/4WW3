@@ -33,6 +33,51 @@
     left: 2%;
     font-family: Poppins;
 }
+
+/* user name */
+.jumbotron h3 {
+    text-align: left !important;
+    background-color:grey;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: left;
+    position: relative;
+    z-index: 0 !important;
+    color: black !important;
+    font-family: Poppins;
+}
+
+/* comment */
+.jumbotron p {
+    text-align: left;
+    color:black;
+}
+
+/* the name of restuarant and reviews */
+.jumbotron #name {
+    font-size: 1.2em !important;
+    text-align: left;
+    color: black !important;
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-family: Poppins;
+}
+
+/* the result division */
+.result {
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 5%;
+    background-color: white;
+}
+
+/* The map location of restaurant */
+img {
+    position: absolute;
+    top: 10%;
+    left: 150%;
+}
   
 /* Footer at the bottom of the page */
   .myfooter {

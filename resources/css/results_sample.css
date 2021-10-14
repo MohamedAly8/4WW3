@@ -1,274 +1,48 @@
+/* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-body{
-  background: url("/resources/foodimg2.jpg");
-  margin: 0;
-  padding: 0;
-  background-size: 100%;
-  height: 100vh;
-  overflow: scroll;
-}
-.center{
-  z-index: 0;
-  position: absolute;
-  top: 40%;
-  left: 27%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  background: white;
-  opacity: 0.7;
-  border-radius: 12px;
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
-}
-.center h1{
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid silver;
-}
-.center form{
-  padding: 0 40px;
-  box-sizing: border-box;
-}
 
 
-
-
-
-:root{
-  --color-1: green;
-}
-
-*{
-    
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-    z-index: 9999;
-}
-
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-.container{
-    max-width: 1170px;
-    margin: 0;
- 
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
-.align-items-center{
-    align-items: left;
-}
-.justify-content-between{
-    justify-content: space-between;
-}
-/*header*/
-.header{
-  
-    background-image: linear-gradient(to right, #14aa57,#11e081);
-
-    position: fixed;
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
-.header .logo,
-.header .nav{
-
-    padding:0 15px;
-}
-.header .logo a{
- 
-  float: left;
-  color: white;
-  font-weight: bolder;
-  font-size: 1.6em;
-  font-style: italic;
-  font-family: 'Courier New', Courier, monospace;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-    
-}
-
-.header .logo a:hover{
-  color: black ;
-  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(248, 246, 246), 1px 0 rgb(248, 245, 245), 0 -1px rgb(240, 239, 239);
-    
-}
-
-.header .nav ul li{
-
-    display: inline-block;
-    margin-left: 40px;
-}
-
-
-#login, #labels {
-  display: inline;
-  font-size: 16px !important;
-  font-weight:normal !important;
-  font-style: normal !important;
-  padding:10px 0;
-  color: white;
-  font-family: serif !important;
-  font-size: 1.2em !important;
-  text-transform: capitalize !important;
-  transition: all 0.5s ease !important;
-  text-shadow: none !important;
-}
-
-
-#labels:hover, #login:hover {
-    color: #ffffff !important;
-    text-decoration: underline;
-    font-style: italic !important;
-}
-
-
-
-.header #nav-check{
-
-    position: absolute;
-    opacity:0;
-    pointer-events: none;
-}
-.nav-toggler{
-    height: 34px;
-    width: 44px;
-    background-color: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none;
+/* Style the jumobtron contained */
+.jumbotron {
+    align-items:center;
+    display:flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.5)),
+    url('/resources/foodimg2.jpg');
+    background-size:cover;
+    background-position: top; /* position at the top */
+    background-repeat:repeat-x;
+    min-height: 50em; /* height in relative units */ 
+    color:white;
+    justify-content: center; 
     align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
-.nav-toggler span{
-    display: block;
-    height: 2px;
-    width: 20px;
-    background-color: var(--color-1);
-    position: relative;
-}
-.nav-toggler span::before,
-.nav-toggler span::after{
-   content: '';
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-color: var(--color-1);
-   left:0;
-}
-.nav-toggler span::before{
-    top: -6px;
-}
-.nav-toggler span::after{
-    top: 6px;
-}
-@media(max-width: 991px){
-    .nav-toggler{
-        display: flex;
-    }
-    .header .nav{
-        position: absolute;
-        left:0;
-        top:100%;
-        width: 100%;
-        background-color: var(--color-1);
-        border-top: 1px solid rgba(255,255,255,0.2);
-        opacity:0;
-        visibility: hidden;
-    }
-    .header .nav ul li{
-        display: block;
-        margin:0;
-    }
-    .header #nav-check:checked ~ .nav{
-       opacity: 1;
-       visibility: visible;
-    }
-    .header #nav-check:focus ~ .nav-toggler{
-        box-shadow: 0 0 15px #000000;
-    }
-    .header #nav-check:checked ~ .nav-toggler span{
-        background-color: transparent;
-    }
-    .header #nav-check:checked ~ .nav-toggler span::before{
-        top:0;
-        transform: rotate(45deg);
-    }
-    .header #nav-check:checked ~ .nav-toggler span::after{
-        top:0;
-        transform: rotate(-45deg);
-    }
+    text-align: center; 
 }
 
-
-
-.myfooter {
-    margin-top: auto;
-    position:absolute;
-    bottom: 0 !important;
-    width: 100%;
-    height: 100px;
-}  
-
-.fa-cutlery {
-color: white;
-text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-}
-
-#icon {
-font-size: 3em;
-}
-
-footer h6{
-  color: green;
-  font-family: serif;
-  font-weight: normal !important;
-  }
-
-footer i {
-color: green;
-}
-
-#footer-content {
-overflow: scroll;
-color: #1d6d1d;
-background-color: white;
-}
-
-#slogan {
-color: green;
-font-style: italic;
-font-family:serif;
-font-size: 1.5em;
-}
-
-
-h1 {
+/* The title within the container */
+.jumbotron h1 {
+    font-family: Poppins;
     z-index: 0;
-    position: relative;
-    top: 0%;
-    left: 0%;
-    color:black !important;
+    position: absolute;
     font-size: 2em;
-    font-family: "Poppins", sans-serif;
-
-
+    color: aliceblue;
+    top: 8%;
+    margin-top: 0;
+    margin-bottom: 0.5;
 
 }
 
+/* The table with results */
+.jumbotron .table-striped {
+    z-index: 0;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    background-color: white;
+    width: 50%;
+    opacity: 0.8;
+}
 
-
+/* The map image */
 img {
     background-color: white;
     padding:10px;
@@ -285,6 +59,58 @@ img {
     overflow: visible;
     margin-bottom: 500px !important;
 }
+
+
+
+/* To make sure the navbar is always on top of other contents */
+*{
+    z-index: 9999;
+}
+
+/* Footer position at the bottom */
+.myfooter {
+    margin-top: auto;
+    position:absolute;
+    bottom: 0 !important;
+    width: 100%;
+    height: 140px;
+}  
+
+/* Font Icon used */ 
+.fa-cutlery {
+color: white;
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#icon {
+font-size: 3em;
+}
+
+/* Footer contents below */
+footer h6{
+  color: green;
+  font-family: serif;
+  font-weight: normal !important;
+  }
+
+footer i {
+color: green;
+}
+
+#footer-content {
+overflow: scroll;
+color: #1d6d1d;
+background-color: white;
+}
+
+/*Slogan in the footer */
+#slogan {
+color: green;
+font-style: italic;
+font-family:serif;
+font-size: 1.5em;
+}
+
 
 
 

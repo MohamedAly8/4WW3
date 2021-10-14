@@ -1,185 +1,16 @@
+/* Import font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-:root{
-    --color-1: green;
-  }
 
-  *{
-      
-      box-sizing: border-box;
-      margin:0;
-      padding:0;
-  }
-
-  a{
-      text-decoration: none;
-  }
-  ul{
-      list-style: none;
-  }
-  .container{
-      max-width: 1170px;
-      margin: 0;
-  }
-  .row{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .align-items-center{
-      align-items: left;
-  }
-  .justify-content-between{
-      justify-content: space-between;
-  }
-  /*header*/
-  .header{
-      background-image: linear-gradient(to right, #14aa57,#11e081);
-
-      position: fixed;
-      top: 0; /* Position the navbar at the top of the page */
-      width: 100%; /* Full width */
-  }
-  .header .logo,
-  .header .nav{
-      padding:0 15px;
-  }
-  .header .logo a{
-    float: left;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.6em;
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-      
-  }
-
-  .header .logo a:hover{
-    color: black ;
-    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(248, 246, 246), 1px 0 rgb(248, 245, 245), 0 -1px rgb(240, 239, 239);
-      
-  }
-
-  .header .nav ul li{
-      display: inline-block;
-      margin-left: 40px;
-  }
-
- 
-#login, #labels {
-    display: inline;
-    font-size: 16px !important;
-    font-weight:normal !important;
-    font-style: normal !important;
-    padding:10px 0;
-    color: white;
-    font-family: serif !important;
-    font-size: 1.2em !important;
-    text-transform: capitalize !important;
-    transition: all 0.5s ease !important;
-    text-shadow: none !important;
-}
-
- 
-  #labels:hover, #login:hover {
-      color: #ffffff !important;
-      text-decoration: underline;
-      font-style: italic !important;
-  }
-
-  
-
-  .header #nav-check{
-      position: absolute;
-      opacity:0;
-      pointer-events: none;
-  }
-  .nav-toggler{
-      height: 34px;
-      width: 44px;
-      background-color: #ffffff;
-      border-radius: 4px;
-      cursor: pointer;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      margin-right: 15px;
-  }
-  .nav-toggler span{
-      display: block;
-      height: 2px;
-      width: 20px;
-      background-color: var(--color-1);
-      position: relative;
-  }
-  .nav-toggler span::before,
-  .nav-toggler span::after{
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     background-color: var(--color-1);
-     left:0;
-  }
-  .nav-toggler span::before{
-      top: -6px;
-  }
-  .nav-toggler span::after{
-      top: 6px;
-  }
-  @media(max-width: 991px){
-      .nav-toggler{
-          display: flex;
-      }
-      .header .nav{
-          position: absolute;
-          left:0;
-          top:100%;
-          width: 100%;
-          background-color: var(--color-1);
-          border-top: 1px solid rgba(255,255,255,0.2);
-          opacity:0;
-          visibility: hidden;
-      }
-      .header .nav ul li{
-          display: block;
-          margin:0;
-      }
-      .header #nav-check:checked ~ .nav{
-         opacity: 1;
-         visibility: visible;
-      }
-      .header #nav-check:focus ~ .nav-toggler{
-          box-shadow: 0 0 15px #000000;
-      }
-      .header #nav-check:checked ~ .nav-toggler span{
-          background-color: transparent;
-      }
-      .header #nav-check:checked ~ .nav-toggler span::before{
-          top:0;
-          transform: rotate(45deg);
-      }
-      .header #nav-check:checked ~ .nav-toggler span::after{
-          top:0;
-          transform: rotate(-45deg);
-      }
-  }
-
-
-
+/* Footer */
   .myfooter {
     margin-top: auto;
     position:absolute;
     bottom: 0 !important;
     width: 100%;
-    height: 250px;
+    height: 350px !important;
   }  
     
+/* Icon in the footer  and nav */
     .fa-cutlery {
     color: white;
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
@@ -189,12 +20,13 @@
     font-size: 3em;
     }
     
+/* footer contents */
     footer h6{
     color: green;
     font-family: serif;
     font-weight: normal;
     }
-
+/* footer hover */ 
     #text:hover {
         text-decoration: underline;
     }
@@ -208,19 +40,15 @@
     background-color: white;
     }
     
+/* slogan in the footer */
     #slogan {
     color: green;
     font-style: italic;
     font-family:serif;
     font-size: 1.5em;
     }
-    
 
-
-body {
-    margin: 0;
-    font-family: sans-serif;
-}
+/* jumbotron contrainer */
 .jumbotron {
 
     align-items:center;
@@ -239,6 +67,7 @@ body {
     text-align: center; 
 }
 
+/* jumbotron title */
 .jumbotron h1 {
     font-size: 5em;
     color: aliceblue;
