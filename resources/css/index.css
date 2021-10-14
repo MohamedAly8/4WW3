@@ -221,24 +221,25 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+.jumbotron {
 
-.hero {
-    width: 100vw;
-    height: 45vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.5)),
+    align-items:center;
+    display:flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.5)),
     url('/resources/foodimg.jpg');
-    background-size: cover;
+    background-size:cover;
     
+    background-position: top; /* position at the top */
+    background-repeat:repeat-x;
+    min-height: 20em; /* height in relative units */ 
+    color:white;
+
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
 }
 
-.hero h1 {
+.jumbotron h1 {
     font-size: 5em;
     color: aliceblue;
     margin-top: 0;
@@ -246,12 +247,12 @@ body {
 
 }
 
-.hero p {
+.jumbotron p {
     color: aliceblue;
     font-size: 2em;
 }
 
-.hero .btn {
+.jumbotron .btn {
     display: blcok;
     width: 300px;
     background: lightgreen;
@@ -269,7 +270,7 @@ body {
 
 }
 
-.hero .btn:hover {
+.jumbotron .btn:hover {
     transition-duration: 0.2s;
     color: white;
     background-color: rgb(22, 156, 22);
@@ -278,9 +279,6 @@ body {
     
 }
 
-.jumbotron {
-    margin-top: 0px;
-}
 
 .or {
     margin-top:5%; 
@@ -292,7 +290,7 @@ body {
     height: 50px;
     padding: 10px;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     outline: none;
 }
 
@@ -301,7 +299,7 @@ body {
 }
 
 .location {
-    width: 400px;
+    width: 200px;
 }
 
 .search-btn {
@@ -324,3 +322,11 @@ input{
     text-align:center;
  }
 
+/* These @media tags are to change the css to fit in mobile view for items inside of the jumbotron container */
+ @media (min-width: 350px) { .jumbotron h1{ font-size:2em; } }
+ @media (min-width: 350px) { .jumbotron p{ font-size:1em; } }
+ @media (min-width: 350px) { .jumbotron .btn{ width: auto; height: 60px; margin-top: 5px; } }
+ @media (min-width: 350px) { .or{ font-size:small; margin-bottom: 1px; } }
+ @media (min-width: 350px) { .search-btn{ width: 80px; } }
+ @media (min-width: 350px) { .restaurant{ width: 200px; } }
+ @media (min-width: 350px) { .location{ width: 150px; margin-bottom: 5px; } }
