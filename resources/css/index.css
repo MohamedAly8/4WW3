@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 :root{
     --color-1: green;
   }
@@ -165,13 +172,13 @@
 
 
 
-  .myfooter { 
-    position:relative;
+  .myfooter {
+    margin-top: auto;
+    position:absolute;
     bottom: 0 !important;
     width: 100%;
-    height: 100px;
-    
-    }
+    height: 250px;
+  }  
     
     .fa-cutlery {
     color: white;
