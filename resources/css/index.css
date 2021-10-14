@@ -323,10 +323,10 @@ input{
  }
 
 /* These @media tags are to change the css to fit in mobile view for items inside of the jumbotron container */
- @media (min-width: 350px) { .jumbotron h1{ font-size:2em; } }
- @media (min-width: 350px) { .jumbotron p{ font-size:1em; } }
- @media (min-width: 350px) { .jumbotron .btn{ width: auto; height: 60px; margin-top: 5px; } }
- @media (min-width: 350px) { .or{ font-size:small; margin-bottom: 1px; } }
- @media (min-width: 350px) { .search-btn{ width: 80px; } }
- @media (min-width: 350px) { .restaurant{ width: 200px; } }
- @media (min-width: 350px) { .location{ width: 150px; margin-bottom: 5px; } }
+ @media screen and (max-width: 400px) { .jumbotron h1{ font-size: 250% ; } }
+ @media screen and (max-width: 400px) { .jumbotron p{ font-size:small; } }
+ @media screen and (max-width: 400px) { .jumbotron .btn{ width: auto; height: 60px; margin-top: 5px; } }
+ @media screen and (max-width: 400px) { .or{ font-size:2em; } }
+ @media screen and (max-width: 400px) { .search-btn{ width: 250px; } }
+ @media screen and (max-width: 400px) { .restaurant{ width: 200px; } }
+ @media screen and (max-width: 400px) { .location{ width: 150px; margin-bottom: 5px; } }
