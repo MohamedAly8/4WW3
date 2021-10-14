@@ -20,45 +20,61 @@
     <title>Login</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
-            aria-hidden="true"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Map</a>
-              <a class="nav-link" href="#">Submit a Review</a>
-            </div>
-            <div class="navbar-nav  ml-auto">
-                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-                <a class="nav-link" href="#">Signup</a>
-              </div>
+<!-- Bootstrap navbar, added style to change color -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
+    <!-- This class makes container span full width of viewport -->
+      <div class="container-fluid">
+        <!-- Navbar-brand is the "website name" which is on the left side of the navbar, added style to customize vanilla brand -->
+        <a class="navbar-brand" href="#">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
+          aria-hidden="true"></i></a>
+          <!-- Button for when the navbar is collapsible when at a certain screen width -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar-collapse allows the navbar to collapse when it reaches a certain minimal width -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <!-- Contains the menu items of the navbar -->
+          <div class="navbar-nav">
+            <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="map.html">Map</a>
+            <a class="nav-link" href="results_sample.html">Submit a Review</a>
           </div>
+          <!-- ml-auto moves the items to the right of the navbar -->
+          <div class="navbar-nav  ml-auto">
+              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              <a class="nav-link" href="signup.html">Signup</a>
+            </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+<!-- This is the login section -->
   <section>
     <div class="center">
+        <!-- Header for login box -->
         <h1>Login</h1>
+        <!-- HTTP post transaction of form-data -->
         <form method="post">
+        
+            <!-- Section for email field -->
           <div class="txt_field">
             <input type="email" required>
             <span></span>
             <label>E-mail</label>
           </div>
+          <!-- Section for password field, type password so password does not show -->
           <div class="txt_field">
             <input type="password" required>
             <span></span>
             <label>Password</label>
           </div>
+          <!-- Forgot password field under password -->
           <div class="pass">Forgot Password?</div>
+          <!-- Login confirmation button of type submit -->
           <input type="submit" value="Login">
           <div class="signup_link">
+              <!-- If user does not have account, redirects them to signup page -->
             Not a member? <a href="signup.html">Signup</a>
           </div>
         </form>
