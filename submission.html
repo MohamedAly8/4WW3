@@ -15,39 +15,34 @@
 </head>
 <body>
 
-            <!-- Navigation Bar -->
-            <header class="header">
-              <div class="container">
-                <div class="row align-items-center justify-content-between">
-                  <div class="logo">
-                    <a class="navbar-brand" href="index.html">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
-                        aria-hidden="true"></i></a>
-            
-                  <input type="checkbox" id="nav-check">
-                  <label for="nav-check" class="nav-toggler">
-                    <span></span>
-                  </label>
-            
-                  <nav class="nav">
-            
-                    <ul>
-                 
-                      <li><a div id = "labels" href="index.html">Home</a></li>
-                      <li><a div id = "labels" href="index.html">Search</a></li>
-                      <li><a div id = "labels" href="submission.html">Form</a></li>
-                      <li><a div id = "login" href="login.html">Login</a></li>
-                      <li><a div id = "login" href="index.html">Sign Up</a></li>
-                 
-                    </ul>
-            
-            
-            
-            
-            
-                  </nav>
-                </div>
-              </div>
-            </header>
+<!-- Bootstrap navbar, added style to change color -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
+  <!-- This class makes container span full width of viewport -->
+    <div class="container-fluid">
+      <!-- Navbar-brand is the "website name" which is on the left side of the navbar, added style to customize vanilla brand -->
+      <a class="navbar-brand" href="index.html">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
+        aria-hidden="true"></i></a>
+        <!-- Button for when the navbar is collapsible when at a certain screen width -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar-collapse allows the navbar to collapse when it reaches a certain minimal width -->
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <!-- Contains the menu items of the navbar -->
+        <div class="navbar-nav">
+          <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="results_sample.html">Map</a>
+          <a class="nav-link" href="submission.html">Submit a Review</a>
+        </div>
+        <!-- ml-auto moves the items to the right of the navbar -->
+        <div class="navbar-nav  ml-auto">
+            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+            <a class="nav-link" href="signup.html">Signup</a>
+          </div>
+      </div>
+    </div>
+  </nav>
 
             
 
@@ -65,7 +60,7 @@
                 <div class="form-row col-md-10">
                   <div class="form-group col-md-10">
                     <label for="inputEmail4">Description</label>
-                    <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="What's so special">
                   </div>
                 </div>
 
