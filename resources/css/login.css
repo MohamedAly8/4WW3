@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url("/resources/patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+  background-size: 1200px;
+  height: 100vh;
+}
+.center{
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+}
+.center h1{
+  text-align: center;
+  padding: 5px 0;
+}
+
+.center p{
+    text-align: center;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #347400;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #347400;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+input[type="submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: rgb(1, 173, 1);
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+input[type="submit"]:hover{
+  border-color: #347400;
+  transition: .5s;
+}
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #347400;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+
+:root{
+  --color-1: green;
+}
+
+
+
+*{
+    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    z-index: 9999;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0;
+ 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: left;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+/*header*/
+.header{
+  
+    background-image: linear-gradient(to right, #14aa57,#11e081);
+
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+.header .logo,
+.header .nav{
+
+    padding:0 15px;
+}
+.header .logo a{
+ 
+  float: left;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.6em;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    
+}
+
+.header .logo a:hover{
+  color: black ;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(248, 246, 246), 1px 0 rgb(248, 245, 245), 0 -1px rgb(240, 239, 239);
+    
+}
+
+.header .nav ul li{
+
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+#login, #labels {
+  display: inline;
+  font-size: 16px !important;
+  font-weight:normal !important;
+  font-style: normal !important;
+  padding:10px 0;
+  color: white;
+  font-family: serif !important;
+  font-size: 1.2em !important;
+  text-transform: capitalize !important;
+  transition: all 0.5s ease !important;
+  text-shadow: none !important;
+}
+
+
+#labels:hover, #login:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+    font-style: italic !important;
+}
+
+
+
+.header #nav-check{
+
+    position: absolute;
+    opacity:0;
+    pointer-events: none;
+}
+.nav-toggler{
+    height: 34px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.nav-toggler span{
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-1);
+   left:0;
+}
+.nav-toggler span::before{
+    top: -6px;
+}
+.nav-toggler span::after{
+    top: 6px;
+}
+@media(max-width: 991px){
+    .nav-toggler{
+        display: flex;
+    }
+    .header .nav{
+        position: absolute;
+        left:0;
+        top:100%;
+        width: 100%;
+        background-color: var(--color-1);
+        border-top: 1px solid rgba(255,255,255,0.2);
+        opacity:0;
+        visibility: hidden;
+    }
+    .header .nav ul li{
+        display: block;
+        margin:0;
+    }
+    .header #nav-check:checked ~ .nav{
+       opacity: 1;
+       visibility: visible;
+    }
+    .header #nav-check:focus ~ .nav-toggler{
+        box-shadow: 0 0 15px #000000;
+    }
+    .header #nav-check:checked ~ .nav-toggler span{
+        background-color: transparent;
+    }
+    .header #nav-check:checked ~ .nav-toggler span::before{
+        top:0;
+        transform: rotate(45deg);
+    }
+    .header #nav-check:checked ~ .nav-toggler span::after{
+        top:0;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+.myfooter {
+margin-top: auto;
+position:absolute;
+bottom: 0 !important;
+width: 100%;
+height: 100px;
+
+}
+
+.fa-cutlery {
+color: white;
+text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#icon {
+font-size: 3em;
+}
+
+footer h6{
+  color: green;
+  font-family: serif;
+  font-weight: normal !important;
+  }
+
+footer i {
+color: green;
+}
+
+#footer-content {
+color: #1d6d1d;
+background-color: white;
+}
+
+#slogan {
+color: green;
+font-style: italic;
+font-family:serif;
+font-size: 1.5em;
+}
+

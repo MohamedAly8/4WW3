@@ -1,0 +1,161 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* Footer */
+  .myfooter {
+    margin-top: auto;
+    position:absolute;
+    bottom: 0 !important;
+    width: 100%;
+    height: 350px !important;
+  }  
+    
+/* Icon in the footer  and nav */
+    .fa-cutlery {
+    color: white;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    }
+    
+    #icon {
+    font-size: 3em;
+    }
+    
+/* footer contents */
+    footer h6{
+    color: green;
+    font-family: serif;
+    font-weight: normal;
+    }
+/* footer hover */ 
+    #text:hover {
+        text-decoration: underline;
+    }
+    
+    footer i {
+    color: green;
+    }
+    
+    #footer-content {
+    color: #1d6d1d;
+    background-color: white;
+    }
+    
+/* slogan in the footer */
+    #slogan {
+    color: green;
+    font-style: italic;
+    font-family:serif;
+    font-size: 1.5em;
+    }
+
+/* jumbotron contrainer */
+.jumbotron {
+
+    align-items:center;
+    display:flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.5)),
+    url('/resources/foodimg.jpg');
+    background-size:cover;
+    
+    background-position: top; /* position at the top */
+    background-repeat:repeat-x;
+    min-height: 20em; /* height in relative units */ 
+    color:white;
+
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+}
+
+/* jumbotron title */
+.jumbotron h1 {
+    font-size: 5em;
+    color: aliceblue;
+    margin-top: 0;
+    margin-bottom: 0.5;
+
+}
+
+.jumbotron p {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.jumbotron .btn {
+    display: blcok;
+    width: 300px;
+    background: lightgreen;
+    border: none;
+    border-radius: 25px;
+
+    font-size: large;
+
+    padding: 1em;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 20px;
+
+}
+
+.jumbotron .btn:hover {
+    transition-duration: 0.2s;
+    color: white;
+    background-color: rgb(22, 156, 22);
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+.or {
+    margin-top:5%; 
+    font-size: 40px;
+}
+
+
+.search-field {
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.restaurant {
+    width: 400px;   
+}
+
+.location {
+    width: 200px;
+}
+
+.search-btn {
+    height: 50px;
+    width: 100px;
+    background: lightgreen;
+    border: none;
+    color:#000 !important;
+    border-radius: 25px;
+    transition-duration: 0.2s;
+}
+
+.search-btn:hover {
+    color: white !important;
+    cursor: pointer;
+    background-color: rgb(22, 156, 22);
+}
+
+input{
+    text-align:center;
+ }
+
+/* These @media tags are to change the css to fit in mobile view for items inside of the jumbotron container */
+ @media screen and (max-width: 400px) { .jumbotron h1{ font-size: 250% ; } }
+ @media screen and (max-width: 400px) { .jumbotron p{ font-size:small; } }
+ @media screen and (max-width: 400px) { .jumbotron .btn{ width: auto; height: 60px; margin-top: 5px; } }
+ @media screen and (max-width: 400px) { .or{ font-size:2em; } }
+ @media screen and (max-width: 400px) { .search-btn{ width: 250px; } }
+ @media screen and (max-width: 400px) { .restaurant{ width: 200px; } }
+ @media screen and (max-width: 400px) { .location{ width: 150px; margin-bottom: 5px; } }
