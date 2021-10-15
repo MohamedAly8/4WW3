@@ -107,8 +107,8 @@
     
 }
 
-.or {
-    margin-top:5%; 
+#or {
+    margin-top: 5%; 
     font-size: 40px;
 }
 
@@ -152,7 +152,7 @@ input{
  @media screen and (max-width: 400px) { .jumbotron h1{ font-size: 250% ; } }
  @media screen and (max-width: 400px) { .jumbotron p{ font-size:small; } }
  @media screen and (max-width: 400px) { .jumbotron .btn{ width: auto; height: 60px; margin-top: 5px; } }
- @media screen and (max-width: 400px) { .or{ font-size:2em; } }
+ @media screen and (max-width: 400px) { #or{ font-size:2em; } }
  @media screen and (max-width: 400px) { .search-btn{ width: 250px; } }
  @media screen and (max-width: 400px) { .restaurant{ width: 200px; } }
  @media screen and (max-width: 400px) { .location{ width: 150px; margin-bottom: 5px; } }
