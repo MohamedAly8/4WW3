@@ -151,7 +151,7 @@ ul{
     flex-wrap: wrap;
 }
 .align-items-center{
-    align-items: left;
+    text-align: left;
 }
 .justify-content-between{
     justify-content: space-between;
