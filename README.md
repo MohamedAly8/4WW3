@@ -1,8 +1,23 @@
-# 4WW3
-4WW3 Project
+# 4WW3 Group
+Mohamed Aly | 400244055 | alym8
+Mehak Rafi Khan | 400260674 | khanm294
 
 
-Workflow:
+# Important Notes
+
+The registration.html componenet is comprised of signup.html. A login.html is also present
+
+The index.html (homepage) is search.html
+
+
+# Our IP Address
+http://52.14.35.160/
+
+# Link to Github
+https://github.com/MohamedAly8/4WW3/
+
+
+# Team Workflow:
 
 Master branch: HTML/CSS working with no issues
 
