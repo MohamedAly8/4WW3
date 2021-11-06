@@ -124,6 +124,11 @@
       background-color: green !important;
       color: white !important;
   }
+  
+  .getlocation {
+      background-color: lightgreen;
+      font-family: "Poppins", sans-serif;
+  }
 
 
 /* These @media tags are to change the css to fit in mobile view for items inside of the jumbotron container */
