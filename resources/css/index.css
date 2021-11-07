@@ -120,6 +120,16 @@
     outline: none;
 }
 
+#rating {
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    color: black;
+
+}
+
 .restaurant {
     width: 400px;   
 }
@@ -130,7 +140,7 @@
 
 .search-btn {
     height: 50px;
-    width: 100px;
+    width: 200px;
     background: lightgreen;
     border: none;
     color:#000 !important;

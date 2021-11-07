@@ -22,6 +22,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
+
+<!-- JAVASCRIPT FOR GEOLOCATION -->
+<script>
+  var x=document.getElementById("demo");
+  var y=document.getElementById("demo2");
+  function getLocation()
+    {
+    if (navigator.geolocation)
+      {
+      navigator.geolocation.getCurrentPosition(showPosition);
+      }
+    else{x.innerHTML="Geolocation is not supported by this browser.";}
+    }
+  function showPosition(position)
+    {
+    x.value=position.coords.latitude;  
+    y.value=position.coords.longitude;    
+    }
+  </script>
+
 <!-- Bootstrap navbar, added style to change color -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: lightgreen;">
       <!-- This class makes container span full width of viewport -->
@@ -63,10 +83,16 @@
         <!-- Search bars of type text for Restaurant name or city location -->
             <form>
               <div class="form-box">
-                <input type="text" class="search-field restaurant" placeholder="Restaurant">
-                <input type="text" class="search-field location" placeholder="Location">
+                <input type="text" class="search-field restaurant" placeholder="Restaurant Name">
+                <select id="rating">
+                  <option value="default" disabled selected hidden>Rating</option>
+                  <option value="1">0.0-1.0</option>
+                  <option value="2">1.0-2.0</option>
+                  <option value="3">2.0-3.0</option>
+                  <option value="4">3.0-4.0</option>
+                </select>
                 <!-- When search is pressed, it redirected the user to the results page  -->
-                <a href = "results_sample.html"><button class="search-btn" type="button">Search</button></a>
+                <a href = "results_sample.html"><button onclick = "getLocation()" class="search-btn" type="button">Locate Near Me</button></a>
               </div>
             </form>
         
