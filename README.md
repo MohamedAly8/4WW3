@@ -7,6 +7,8 @@ Mehak Rafi Khan | 400260674 | khanm294
 
 - Animations present in Mobile view Menu Bar, Sign Up Page Form, Log in Page Form
 
+- The user location coordinates are displayed in the results page when you click the User icon. 
+
 - Live server IP: http://18.116.139.109
 
 - The registration.html componenet is comprised of signup.html. A login.html is also present
