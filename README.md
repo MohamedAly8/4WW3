@@ -5,13 +5,17 @@ Mehak Rafi Khan | 400260674 | khanm294
 
 # Important Notes
 
-The registration.html componenet is comprised of signup.html. A login.html is also present
+- Animations present in Mobile view Menu Bar, Sign Up Page Form, Log in Page Form
 
-The index.html (homepage) is search.html
+- Live server IP: http://18.116.139.109
+
+- The registration.html componenet is comprised of signup.html. A login.html is also present
+
+- The index.html (homepage) is search.html
 
 
 # Our IP Address
-http://52.14.35.160/
+ttp://18.116.139.109
 
 # Link to Github
 https://github.com/MohamedAly8/4WW3/
