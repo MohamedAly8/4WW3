@@ -26,60 +26,8 @@
 </head>
 
 <!-- Javascript for Validation -->
-<script>
-  function verifyEmail() {
-    var x = document.myform.email.value
-
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(x)) {
-      document.getElementById("messsageEmail").innerHTML = "";
-      return (true);
-    }
-    else {
-      document.getElementById("messsageEmail").innerHTML = "You have entered an invalid email address!";
-      return (false)
-    }
-  }
-
-
-  function verifyPassword() {
-    //get the passwords from the fields 
-    var pw = document.getElementById("pswd").value;
-    var pw2 = document.getElementById("pswd2").value;
-    //can't have empty password 
-    if (pw == "") {
-      document.getElementById("message").innerHTML = "**Fill the password please!";
-      return false;
-    }
-
-    //minimum length validation 
-    if (pw.length < 8) {
-      document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
-      return false;
-    }
-    else {
-      document.getElementById("message").innerHTML = "";
-    }
-
-    //maximum length validation  
-    if (pw.length > 15) {
-      document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
-      return false;
-    }
-    else {
-      document.getElementById("message").innerHTML = "";
-        }
-    //equality of passwords validation
-    if (pw != pw2) {
-      document.getElementById("messageMismatch").innerHTML = "Passwords did not match";
-      return false;
-    } else {
-      document.getElementById("messageMismatch").innerHTML = "";
-      return true;
-    }
-
-
-  }
-</script>
+<script src="/resources/js/signup.js"></script>
+  
 
 <body>
   <!-- Bootstrap navbar, added style to change color -->
@@ -124,20 +72,19 @@
         <!-- Section for email field -->
         <div class="txt_field">
           <input type="text" name="email" required>
-          <span id="messsageEmail" style="color:red"> </span> <br><br>
+          <span></span>
           <label>E-mail</label>
         </div>
         <!-- Section for password field, type password so password does not show -->
         <div class="txt_field">
-          <input type="password" id="pswd" value="">
+          <input type="password" id="pswd" required>
           <span></span>
-          <span id="message" style="color:red"> </span> <br><br>
-
           <label>Password</label>
         </div>
+
         <div class="txt_field">
           <input type="password" id="pswd2" required>
-          <span id="messageMismatch" style="color:red"> </span> <br><br>
+          <span></span>
           <label>Re-enter password</label>
         </div>
 
@@ -148,6 +95,9 @@
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>Join Weekly Newsletter
         </label>
+        <span id="message" style="color:red"> </span> <br><br>
+        <span id="messageMismatch" style="color:red"> </span> <br><br>
+        <span id="messsageEmail" style="color:red"> </span> <br><br>
 
         <div class="signup_link">
           <!-- Signup confirmation button of type submit -->
