@@ -124,20 +124,19 @@
         <!-- Section for email field -->
         <div class="txt_field">
           <input type="text" name="email" required>
-          <span id="messsageEmail" style="color:red"> </span> <br><br>
+          <span></span>
           <label>E-mail</label>
         </div>
         <!-- Section for password field, type password so password does not show -->
         <div class="txt_field">
-          <input type="password" id="pswd" value="">
+          <input type="password" id="pswd" required>
           <span></span>
-          <span id="message" style="color:red"> </span> <br><br>
-
           <label>Password</label>
         </div>
+
         <div class="txt_field">
           <input type="password" id="pswd2" required>
-          <span id="messageMismatch" style="color:red"> </span> <br><br>
+          <span></span>
           <label>Re-enter password</label>
         </div>
 
@@ -148,6 +147,9 @@
           <input type="checkbox" checked="checked">
           <span class="checkmark"></span>Join Weekly Newsletter
         </label>
+        <span id="message" style="color:red"> </span> <br><br>
+        <span id="messageMismatch" style="color:red"> </span> <br><br>
+        <span id="messsageEmail" style="color:red"> </span> <br><br>
 
         <div class="signup_link">
           <!-- Signup confirmation button of type submit -->
