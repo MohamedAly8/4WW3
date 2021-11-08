@@ -73,24 +73,24 @@
           <div class="form-group col-md-10">
             <!-- Second input DESCRIPTION Validation: Required Field-->
             <label for="inputDesc">Description</label>
-            <input type="text" class="form-control" id="inputDesc" placeholder="What's so special" required>
+            <input type="text" class="form-control" id="inputDesc" placeholder="What's so special" required aria-required="true">
           </div>
         </div>
 
         <div class="form-row col-md-10">
           <div class="form-group col-md-10">
-            <!-- Third input LATITUDE Validation: Required Field -->
+            <!-- Third input LATITUDE Validation: Can fill out this field using button to get coordinates -->
             <label for="inputLat">Latitude Coordinates</label>
-            Latitude: <input id="demo" type="text" name="Latitude" /> <br />
+            Latitude: <input id="lat" type="text" name="Latitude" /> <br />
           </div>
         </div>
 
 
         <div class="form-row col-md-10">
           <div class="form-group col-md-10">
-            <!-- Third input LONGITUDE Validation: Requirec Field -->
+            <!-- Third input LONGITUDE Validation: Can fill out this field using the button to get coordinates -->
             <label for="inputLong">Longitude Coordinates</label>
-            Longitude: <input id="demo2" type="text" name="Longitude" />
+            Longitude: <input id="long" type="text" name="Longitude" />
           </div>
         </div>
 
@@ -111,12 +111,14 @@
 
 
     </form>
+    <!--  The button used to get user's location in longitude and latitude and fills out the respective fields -->
     <button onclick="getLocation()" class = "getlocation">Get Location Coordinates</button>
     
     
+    <!-- JAVASCRIPT Code for getting user's location for the autofill option of longitude and latitude -->
     <script>
-    var x=document.getElementById("demo");
-    var y=document.getElementById("demo2");
+    var x=document.getElementById("lat");
+    var y=document.getElementById("long");
     function getLocation()
       {
       if (navigator.geolocation)
@@ -125,6 +127,7 @@
         }
       else{x.innerHTML="Geolocation is not supported by this browser.";}
       }
+      // Autofills the form with longitude and latitude positiions
     function showPosition(position)
       {
       x.value=position.coords.latitude;  
@@ -144,7 +147,7 @@
 
 
   <div class="myfooter">
-    <!-- Currently working on this -->
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
 
