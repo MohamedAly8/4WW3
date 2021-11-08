@@ -7,7 +7,9 @@ Mehak Rafi Khan | 400260674 | khanm294
 
 - Animations present in Mobile view Menu Bar, Sign Up Page Form, Log in Page Form
 
-- The user location coordinates are displayed in the results page when you click the User icon. 
+- The user location coordinates are displayed in the results page when you click the User icon.
+
+- The submission form validation is the fields being required and the uploaded content being a JPEG or PNG
 
 - Live server IP: http://18.116.139.109
 
