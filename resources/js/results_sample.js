@@ -17,13 +17,19 @@ function init() {
 
           //Get the restaurants
           var markerlocations = [
-            [position.coords.latitude, position.coords.longitude],
-            [position.coords.latitude + 0.005, position.coords.longitude + 0.005],
+            [position.coords.latitude - 0.005, position.coords.longitude + 0.005],
             [position.coords.latitude + 0.0025, position.coords.longitude + 0.0025],
-            [position.coords.latitude + 0.0035, position.coords.longitude + 0.0035]
+            [position.coords.latitude - 0.0035, position.coords.longitude - 0.0045]
         ];
 
         //Set Markers
+        const image = 
+            "https://developers.google.com/maps/documentation/javascript/examples/full/images/library_maps.png"
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+            map: map,
+            icon: image,
+    });
         for(i  = 0;  i < markerlocations.length; i++) {
             var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(markerlocations[i][0], markerlocations[i][1]),
