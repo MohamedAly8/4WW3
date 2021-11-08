@@ -15,7 +15,7 @@ Mehak Rafi Khan | 400260674 | khanm294
 
 
 # Our IP Address
-ttp://18.116.139.109
+http://18.116.139.109
 
 # Link to Github
 https://github.com/MohamedAly8/4WW3/
