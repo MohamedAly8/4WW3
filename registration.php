@@ -79,7 +79,7 @@ $conn->close();
 
 }
 else {
-    echo "Hello world!<br>";
+    echo "<br>";
 }
   
   ?>

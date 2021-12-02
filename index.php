@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include('indexSearch.php');
+include('createDatabase.php');
+?>
 <html>
 
 <head>
@@ -65,9 +69,9 @@
             <!-- Small p caption -->
             <p> Discover restaurant reviews from thousands of foodies</p>
         <!-- Search bars of type text for Restaurant name or city location -->
-            <form>
+            <form  method = "get">
               <div class="form-box">
-                <input type="text" class="search-field restaurant" placeholder="Restaurant Name">
+                <input type="text" name = "name" class="search-field restaurant" placeholder="Restaurant Name">
                 <select id="rating">
                   <option value="default" disabled selected hidden>Rating</option>
                   <option value="1">0.0-1.0</option>
@@ -76,7 +80,7 @@
                   <option value="4">3.0-4.0</option>
                 </select>
                 <!-- When search is pressed, it redirected the user to the results page  -->
-                <a href = "results_sample.html"><button class="search-btn" type="button">Chews Near Me</button></a>
+                <a href = "results_sample.html"><input class="search-btn" type="submit" name = "Submit"></button></a>
               </div>
             </form>
         

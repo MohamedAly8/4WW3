@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('createDatabase.php');
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,38 +59,10 @@
     <!-- Title of the result -->
 
     <h1>Your Possible Chews</h1>
-
-    <!-- Tabular form result-->
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Restaurant Name</th>
-          <th scope="col">Reviews</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Row 1-->
-        <tr>
-          <th scope="row">1</th>
-          <td>Ozzy's</td>
-          <td>3.2</td>
-        </tr>
-        <!-- Row 2-->
-        <tr>
-          <th scope="row">2</th>
-          <td>Burger Factory</td>
-          <td>3.6</td>
-        </tr>
-        <!-- Row 3-->
-        <tr>
-          <th scope="row">3</th>
-          <td>Five Guys</td>
-          <td>3.7</td>
-        </tr>
-        
-      </tbody>
-    </table>
+    <?php
+include('results.php');
+include('createDatabase.php');
+?>
 
   </div>
 

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include("createDatabase.php");
+include("submissionCheck.php");
+?>
 <html lang="en">
 
 <head>
@@ -19,6 +23,7 @@
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
   <title>Sample Results</title>
+  <style>.error { color: red;}</style>
 </head>
 
 <body>
@@ -57,7 +62,7 @@
   <!-- Adding contents within jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <!-- Form Class -->
-    <form>
+    <form method = "post">
       <div class="form">
         <!-- Title of the Form-->
         <h1>Add Chews</h1>
@@ -65,7 +70,8 @@
           <div class="form-group col-md-10">
             <!-- First input NAME Validation: Required Field -->
             <label for="inputName">Restaurant Name</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Name" required aria-required="true">
+            <input type="text" class="form-control" id="inputName" placeholder="Name" name = 'name'>
+            <?php echo $error_name; ?>
           </div>
         </div>
 
@@ -73,7 +79,8 @@
           <div class="form-group col-md-10">
             <!-- Second input DESCRIPTION Validation: Required Field-->
             <label for="inputDesc">Description</label>
-            <input type="text" class="form-control" id="inputDesc" placeholder="What's so special" required aria-required="true">
+            <input type="text" class="form-control" id="inputDesc" placeholder="What's so special" name = 'desc'>
+            <?php echo $error_description; ?>
           </div>
         </div>
 
@@ -81,7 +88,8 @@
           <div class="form-group col-md-10">
             <!-- Third input LATITUDE Validation: Can fill out this field using button to get coordinates -->
             <label for="inputLat">Latitude Coordinates</label>
-            Latitude: <input id="lat" type="text" name="Latitude" /> <br />
+            Latitude: <input id="lat" name = "lat" type="text" name="Latitude" /> <br />
+            <?php echo $error_latitude; ?>
           </div>
         </div>
 
@@ -90,7 +98,8 @@
           <div class="form-group col-md-10">
             <!-- Third input LONGITUDE Validation: Can fill out this field using the button to get coordinates -->
             <label for="inputLong">Longitude Coordinates</label>
-            Longitude: <input id="long" type="text" name="Longitude" />
+            Longitude: <input id="long" name = "lon" type="text" name="Longitude"/>
+            <?php echo $error_longitude; ?>
           </div>
         </div>
 
@@ -103,7 +112,7 @@
           </div>
 
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" name = "Submit" class="btn btn-primary">Submit</button>
       </div>
       <!-- SUBMIT FORM BUTTON -->
 
