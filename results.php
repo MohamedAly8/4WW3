@@ -28,10 +28,12 @@ if($result = mysqli_query($conn, $sql)){
             echo "</tr>";
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
-                echo "<td>" . $row['name'] . "</td>";
+                echo '<td><a href="individual_sample.php">' . $row['name'] . '</a></td>';
                 echo "<td>" . $row['description'] . "</td>";
                 echo "<td>" . $row['latitude'] . "</td>";
+                $_SESSION['latval'] =  $row['latitude'];
                 echo "<td>" . $row['longitude'] . "</td>";
+                $_SESSION['lonval'] =  $row['longitude'];
             echo "</tr>";
         }
         echo "</table>";

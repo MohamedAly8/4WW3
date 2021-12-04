@@ -86,10 +86,11 @@ if ($conne->connect_error) {
 
  //sql to create table #3 FOR REVIEWS
  $sql = "CREATE TABLE MyReviews (
-  name VARCHAR(50) NOT NULL,
+  latitude VARCHAR(50) NOT NULL,
+  longitude VARCHAR(50) NOT NULL,
   review VARCHAR(50) NOT NULL,
   rating INT NOT NULL,
-  PRIMARY KEY (name, review, rating)
+  PRIMARY KEY (latitude, longitude, review, rating)
   )";
 
 if ($conne->query($sql) === TRUE) {

@@ -146,14 +146,7 @@ img {
   }
 
  /* Formatting of the form box */
-  .form {
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
-      position: relative;
-      background-color: white;
-      top: 30% !important;
-  }
+  
 
   /* submission button */
   .btn-primary {

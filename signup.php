@@ -43,7 +43,7 @@ include('createDatabase.php');
     <!-- This class makes container span full width of viewport -->
     <div class="container-fluid">
       <!-- Navbar-brand is the "website name" which is on the left side of the navbar, added style to customize vanilla brand -->
-      <a class="navbar-brand" href="index.html">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
+      <a class="navbar-brand" href="index.php">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
           aria-hidden="true"></i></a>
       <!-- Button for when the navbar is collapsible when at a certain screen width -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -55,14 +55,14 @@ include('createDatabase.php');
         <!-- Contains the menu items of the navbar -->
         <div class="navbar-nav">
           <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          <a class="nav-link" href="individual_sample.html">Results</a>
-          <a class="nav-link" href="submission.html">Submit a Review</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link" href="individual_sample.php">Results</a>
+          <a class="nav-link" href="submission.php">Submit a Review</a>
         </div>
         <!-- ml-auto moves the items to the right of the navbar -->
         <div class="navbar-nav  ml-auto">
           <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-          <a class="nav-link" href="signup.html">Signup</a>
+          <a class="nav-link" href="signup.php">Signup</a>
         </div>
       </div>
     </div>
@@ -151,13 +151,13 @@ include('createDatabase.php');
                 Resources
               </h6>
               <p>
-                <a href="signup.html">Signup</a>
+                <a href="signup.php">Signup</a>
               </p>
               <p>
-                <a href="index.html">Search</a>
+                <a href="index.php">Search</a>
               </p>
               <p>
-                <a href="submission.html">Submit A Review</a>
+                <a href="submission.php">Submit A Review</a>
               </p>
             </div>
             <!-- Grid column -->
@@ -188,7 +188,7 @@ include('createDatabase.php');
       <div id="footer-content">
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
           © 2021 Copyright:
-          <a class="text-reset fw-bold" href="index.html">ChewReviews.ca</a>
+          <a class="text-reset fw-bold" href="index.php">ChewReviews.ca</a>
         </div>
       </div>
       <!-- Copyright -->

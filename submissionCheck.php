@@ -40,8 +40,8 @@ if(isset($_POST['Submit'])){
 
   }
   
-//check if latitude has the correct form
-  if (!preg_match('/^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))$/', $rest_lat)) {
+//check if latitude has the correct form between -90 and 90
+  if ($rest_lat > 90 || $rest_lat < -90) {
     $error_latitude =  "<span class='error'>Invalid Latitude Coordinates.</span>";
     $test = False;
   }
@@ -53,8 +53,8 @@ if(isset($_POST['Submit'])){
     //$code= "1" ;
   }
 
-  //check if longitude has the correct form
-  if (!preg_match('/^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))$/', $rest_lon)) {
+  //check if longitude has the correct form between -180 and 180
+  if ($rest_lon > 180 || $rest_lon < -180) {
     $error_longitude =  "<span class='error'>Invalid Longitude Coordinates.</span>";
     $test = False;
   }
