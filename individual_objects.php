@@ -49,7 +49,7 @@ $lat_val = $_SESSION['latval']; //need to match this value
 $lon_val = $_SESSION['lonval'];
 
 //now we need to access DATABASE
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "users";

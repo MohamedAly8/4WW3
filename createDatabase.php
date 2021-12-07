@@ -1,7 +1,7 @@
 <?php 
 
 //create databse
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
 
@@ -23,7 +23,7 @@ else {
 
 $conn->close();
 
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
 $dbname = "users";

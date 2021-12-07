@@ -154,7 +154,7 @@ include("submissionCheck.php");
 
 
 
-
+<!-- 
   <div class="myfooter">
 
     <!-- Footer -->
@@ -228,7 +228,7 @@ include("submissionCheck.php");
       <!-- Copyright -->
     </footer>
     <!-- Footer -->
-  </div>
+  </div> -->
 
 
 

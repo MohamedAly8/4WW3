@@ -90,7 +90,7 @@ include('createDatabase.php');
           </div>
       </div>
 
-<div class="myfooter">
+<!-- <div class="myfooter">
   <!-- Currently working on this -->
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted">
@@ -163,7 +163,7 @@ include('createDatabase.php');
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-</div>
+</div> -->
 
 
 
