@@ -4,10 +4,6 @@ session_start();
 $var_value = $_SESSION['nameValue'];
 
 //now we need to access DATABASE
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 $servername = "localhost";
 $username = "root";
 $password = "password";
@@ -54,6 +50,8 @@ if($result = mysqli_query($conn, $sql)){
 else {
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
 }
+
+$conn->close();
 
 //$result = mysql_query($sql);  
 

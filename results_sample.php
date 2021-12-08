@@ -94,8 +94,14 @@ var marker = L.marker([43.58318179804465, -79.63780996170709]).addTo(result_map)
 
 marker.bindPopup("<b>Ozzy Burger</b><br>Great Burgers");
 
+// var rows = <?php $statement = $pdo->query("SELECT * FROM `MyObjects` WHERE (`name` LIKE '%$_SESSION['nameValue']%')");
+// $rows = $statement->fetchall(PDO::FETCH_ASSOC);
+// echo json_encode($rows);
+// ?>;
 
-
+// for(i = 0; i < rows.length; i++){
+//   var marker = L.marker([rows[i]['latitude'], rows[i]['longtitude']).addTo(result_map);
+}
 
   </script>      
   
