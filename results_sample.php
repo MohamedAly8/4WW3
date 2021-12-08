@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include('createDatabase.php');
+include('results.php');
 
 ?>
 
