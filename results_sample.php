@@ -63,7 +63,7 @@ include('createDatabase.php');
 include('results.php');
 ?>
 
-  </div>
+  
 
   <div id="map">
     <script

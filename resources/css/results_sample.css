@@ -125,12 +125,12 @@ font-size: 1.5em;
   /* Set the size of the div element that contains the map */
   #map {
     position: absolute;
-    height: 400px;
+    height: 100px;
     /* The height is 400 pixels */
-    width: 60%;
+    width: 100%;
     /* The width is the width of the web page */
-    top: 400px;
-    left: 350px;
+    top: 100px;
+    left: 150px;
   }
 
 
