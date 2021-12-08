@@ -11,6 +11,8 @@ function initMap() {
     });
 
     
+
+    
 // This marker variable is a visible red marker that will be shown on the map instantiated above 
 // The position parameter is the location of the market, map parameter indicates which map this marker will be placed
 // The title is shown when the user hovers on the market on the initialized map
