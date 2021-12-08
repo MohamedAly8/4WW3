@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php
 include('createDatabase.php');
+include('results.php');
 ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,6 +30,8 @@ include('createDatabase.php');
 </head>
 
 <body>
+
+
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -71,11 +75,7 @@ include('createDatabase.php');
     <!-- Title of the result -->
 
     <h1>Your Possible Chews</h1>
-    <div>
-    <?php
-include('results.php');
-?> 
-</div>
+
 
     <div id="result_map">
     <script>
