@@ -78,7 +78,7 @@ include('results.php');
 
   <div id="map">
     <script>
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var sample_map = L.map('map').setView([43.58318179804465, -79.63780996170709], 13);
 
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -86,19 +86,19 @@ include('results.php');
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
-}).addTo(map);
+    accessToken: 'pk.eyJ1IjoibW9oYW1lZGFseWFseSIsImEiOiJja3d5MWdhM3MwOWdtMnBvNjNhNnZmZWtmIn0.CQlyUonY5mAZzdrEPAKNAA'
+}).addTo(sample_map);
 
-var marker = L.marker([51.5, -0.09]).addTo(map);
+var marker = L.marker([43.58318179804465, -79.63780996170709]).addTo(sample_map);
 
-marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+marker.bindPopup("<b>Ozzy Burger</b><br>Great Burgers");
 
 
 
 
   </script>      
   
-  </div>
+  </div>    
 
   <!-- The Map Result-->
   <!-- <img src = "/resources/mapsearch.png" alt = "Location on a Map"> --> 
