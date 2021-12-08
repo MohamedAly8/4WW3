@@ -18,6 +18,17 @@ include('createDatabase.php');
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
          <script src="/resources/js/results_sample.js"></script>
 
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+
+
     <title>Sample Results</title>
 </head>
 
@@ -66,10 +77,26 @@ include('results.php');
   </div>
 
   <div id="map">
-    <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaFaKoNyutetKrN8ff443jORcMCvqAsHA&callback=init&libraries=&v=weekly"
-    async
-  ></script>      
+    <script>
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'your.mapbox.access.token'
+}).addTo(map);
+
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+
+
+
+
+  </script>      
   
   </div>
 
