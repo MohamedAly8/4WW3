@@ -1,8 +1,8 @@
 <?php 
 
 //create databse
-$servername = "chewreview.ca:3306";
-$username = "chewreview";
+$servername = "localhost";
+$username = "root";
 $password = "password";
 
 $conn = new mysqli($servername, $username, $password);

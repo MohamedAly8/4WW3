@@ -51,9 +51,9 @@ if(isset($_POST['Submit'])){
 
     if ($test) {
         //now we add to the database 
-        $servername = "localhost";
+$servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 $dbname = "users";
 
 // Create connection

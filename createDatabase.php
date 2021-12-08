@@ -1,9 +1,9 @@
 <?php 
 
 //create databse
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 
 $conn = new mysqli($servername, $username, $password);
 
@@ -23,9 +23,9 @@ else {
 
 $conn->close();
 
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 $dbname = "users";
 
 // Create connection

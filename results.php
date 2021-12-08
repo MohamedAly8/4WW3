@@ -4,9 +4,13 @@ session_start();
 $var_value = $_SESSION['nameValue'];
 
 //now we need to access DATABASE
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 $dbname = "users";
 
 // Create connection

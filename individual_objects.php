@@ -15,7 +15,7 @@ if(isset($_POST['Submit'])){
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 $dbname = "users";
 
 // Create connection
@@ -49,9 +49,9 @@ $lat_val = $_SESSION['latval']; //need to match this value
 $lon_val = $_SESSION['lonval'];
 
 //now we need to access DATABASE
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 $dbname = "users";
 
 // Create connection
