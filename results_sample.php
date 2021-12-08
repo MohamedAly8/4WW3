@@ -69,10 +69,11 @@ include('createDatabase.php');
   <!-- Adding contents within jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <!-- Title of the result -->
+
+    <h1>Your Possible Chews</h1>
     <?php
 include('results.php');
 ?>
-    <h1>Your Possible Chews</h1>
 
     <div id="result_map">
     <script>
