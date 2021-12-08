@@ -69,7 +69,9 @@ include('createDatabase.php');
   <!-- Adding contents within jumbotron -->
   <div class="jumbotron jumbotron-fluid">
     <!-- Title of the result -->
-
+    <?php
+include('results.php');
+?>
     <h1>Your Possible Chews</h1>
 
     <div id="result_map">
@@ -95,9 +97,7 @@ marker.bindPopup("<b>Ozzy Burger</b><br>Great Burgers");
   </script>      
   
   </div>
-    <?php
-include('results.php');
-?>
+
 
 
   </div>
