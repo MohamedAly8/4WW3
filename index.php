@@ -80,13 +80,13 @@ include('createDatabase.php');
                   <option value="4">3.0-4.0</option>
                 </select>
                 <!-- When search is pressed, it redirected the user to the results page  -->
-                <a href = "results_sample.html"><input class="search-btn" type="submit" name = "Submit"></button></a>
+                <a href = "results_sample.php"><input class="search-btn" type="submit" name = "Submit"></button></a>
               </div>
             </form>
         
             <p class="or"> or </p>
             <!-- A button for user to submit a review to server -->
-            <a href = "submission.html"><button class="btn"> Add your review </button></a>
+            <a href = "submission.php"><button class="btn"> Add your review </button></a>
           </div>
       </div>
 

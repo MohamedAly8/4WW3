@@ -54,7 +54,7 @@
 .jumbotron #name, .jumbotron #rating, .jumbotron #location {
     font-size: 1.2em !important;
     text-align: left;
-    color: black !important;
+    color: white !important;
     background-color: lightgreen;
     border-radius: 10px;
     font-family: Poppins;
