@@ -144,7 +144,7 @@ include('createDatabase.php');
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
+    accessToken: 'pk.eyJ1IjoibW9oYW1lZGFseWFseSIsImEiOiJja3d5MWdhM3MwOWdtMnBvNjNhNnZmZWtmIn0.CQlyUonY5mAZzdrEPAKNAA'
 }).addTo(sample_map);
 
 var marker = L.marker([51.5, -0.09]).addTo(sample_map);

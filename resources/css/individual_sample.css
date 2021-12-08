@@ -81,7 +81,7 @@ img {
 /* Footer at the bottom of the page */
   .myfooter {
   margin-top: auto;
-  position:absolute;
+  /* position:absolute; */
   bottom: 0 !important;
   width: 100%;
   height: 140px;
