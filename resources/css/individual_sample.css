@@ -127,7 +127,7 @@ img {
       position: absolute;
       top: 1%;
       left: 35%;
-      color: black !important;
+      color: white !important;
       font-size: 2em;
       font-family: "Poppins", sans-serif;
       
@@ -140,7 +140,7 @@ img {
   .form-group {
       text-align: left;
       font-size: 1em;
-      color: black;
+      color: white;
       font-family:Georgia, 'Times New Roman', Times, serif;
 
   }

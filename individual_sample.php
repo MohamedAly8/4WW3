@@ -73,7 +73,7 @@ include('createDatabase.php');
   
   <div class="jumbotron jumbotron-fluid">
   <form method = "post">
-  <div class = "form123" style = "display:inline;right:20%;height:60%;width:50%;background-color:white;color:black">
+  <div class = "form123" style = "display:inline;right:20%;height:60%;width:50%;background-color:white;color:white">
         <!-- Title of the Form-->
         <h1>Add Reviews</h1>
         

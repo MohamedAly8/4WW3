@@ -4,7 +4,7 @@ session_start();
 $var_value = $_SESSION['nameValue'];
 
 //now we need to access DATABASE
-$servername = "127.0.0.1";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "users";
