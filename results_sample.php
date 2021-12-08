@@ -4,6 +4,7 @@ include('createDatabase.php');
 include('results.php');
 ?>
 
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +32,9 @@ include('results.php');
 
 <body>
 
-
+<?php
+include('results.php');
+?>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
