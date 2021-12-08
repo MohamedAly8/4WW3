@@ -75,7 +75,8 @@ include('createDatabase.php');
 include('results.php');
 ?>
 
-<div id="map">
+<p> hello </p>
+<!-- <div id="map">
     <script>
     var sample_map = L.map('map').setView([43.58318179804465, -79.63780996170709], 13);
 
@@ -97,7 +98,7 @@ marker.bindPopup("<b>Ozzy Burger</b><br>Great Burgers");
 
   </script>      
   
-  </div>
+  </div> -->
 
   </div>
     
