@@ -48,11 +48,11 @@ include('createDatabase.php');
               <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
               <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               <a class="nav-link" href="individual_sample.php">Results</a>
-              <a class="nav-link" href="submission.php">Submit a Review</a>
+              <a class="nav-link" href="submission.php">Add Chew</a>
             </div>
             <!-- ml-auto moves the items to the right of the navbar -->
             <div class="navbar-nav  ml-auto">
-                <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                 <a class="nav-link" href="signup.php">Signup</a>
               </div>
           </div>
@@ -72,7 +72,7 @@ include('createDatabase.php');
             <form  method = "get">
               <div class="form-box">
                 <input type="text" name = "name" class="search-field restaurant" placeholder="Restaurant Name">
-                <select id="rating">
+                <select id="rating" name = "rev"  id = "rev">
                   <option value="default" disabled selected hidden>Rating</option>
                   <option value="1">0.0-1.0</option>
                   <option value="2">1.0-2.0</option>

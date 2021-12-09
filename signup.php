@@ -57,11 +57,11 @@ include('createDatabase.php');
           <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           <a class="nav-link" href="individual_sample.php">Results</a>
-          <a class="nav-link" href="submission.php">Submit a Review</a>
+          <a class="nav-link" href="submission.php">Add Chew</a>
         </div>
         <!-- ml-auto moves the items to the right of the navbar -->
         <div class="navbar-nav  ml-auto">
-          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+          <a class="nav-link active" aria-current="page" href="login.php">Login</a>
           <a class="nav-link" href="signup.php">Signup</a>
         </div>
       </div>

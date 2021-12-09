@@ -1,5 +1,8 @@
 // Init function initializes the map and needed parameters for the map 
+        
 function init() {
+ 
+  
     // Initialized the center of the map to Downtown toronto
     const initialPosition = { lat: 43.5592074, lng: -79.3326367 };
     // Sets the map instance to the div with ID map from the html to place map in that location in the html
