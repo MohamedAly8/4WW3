@@ -96,10 +96,10 @@ include('results.php');
     accessToken: 'pk.eyJ1IjoibW9oYW1lZGFseWFseSIsImEiOiJja3d5MjRpMngwYjI2MnBwaHVyNGJwbXlqIn0.Kk5OO3h7hfA7O2zkK8IkKw'
 }).addTo(result_map);
 
-var rows = <?php $statement = $pdo->query("SELECT * FROM `MyObjects` WHERE (`name` = $var_value)");
-  $rows = $statement->fetchall(PDO::FETCH_ASSOC);
-  echo json_encode($rows);
-?>;
+// var rows = <?php $statement = $pdo->query("SELECT * FROM `MyObjects` WHERE (`name` = $var_value)");
+//   $rows = $statement->fetchall(PDO::FETCH_ASSOC);
+//   echo json_encode($rows);
+// ?>;
 
 for(i = 0; i < rows.length; i++){
   //var marker = L.marker([rows[i]['latitude'], rows[i]['longitude']]).addTo(result_map);
