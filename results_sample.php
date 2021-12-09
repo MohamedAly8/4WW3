@@ -101,6 +101,9 @@ var rows = <?php $statement = $pdo->query("SELECT * FROM `MyObjects` WHERE (`nam
   echo json_encode($rows);
 ?>;
 
+console.log(rows);
+
+
 for(i = 0; i < rows.length; i++){
   var marker = L.marker([rows[i]['latitude'], rows[i]['longitude']]).addTo(result_map);
 }
