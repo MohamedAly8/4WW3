@@ -31,6 +31,23 @@ for(i = 0; i < rows.length; i++){
 //marker.bindPopup("<b>Ozzy Burger</b><br>Great Burgers");
 ```
 
+-  Please consider looking at the code, especially the PHP files as proof that we put in great effort to finish almost all the tasks
+
+
+createDatabase.php , Creating the Database, contains CREATE TABLE statements used to create our database
+
+
+individual_objects.php , Dynamic Objects and attributes. Must be logged in to submit object. Make table of objects for results search
+
+
+loginCheck.php , Ensures user is logged in, checks if user exists or not
+
+
+registration.php , Validates registration and puts info in table if registration complete
+
+
+results.php , Display results based on query of a restaurant or rating, 
+
 - Please note that in the Results page of a search for a restaurant, a table is shown with existing restaurants that match the name, if there are no matches, then no table will be displayed
 
 
