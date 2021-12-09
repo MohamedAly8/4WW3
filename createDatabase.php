@@ -15,10 +15,10 @@ if ($conn -> connect_error ) {
 
 $sql = "CREATE DATABASE users";
 if ($conn->query($sql) === TRUE) {
-    echo("Successfully created database <br>");
+  //  echo("Successfully created database <br>");
 }
 else {
-    echo("Error creating database <br>");
+  //  echo("Error creating database <br>");
 }
 
 $conn->close();
@@ -68,9 +68,9 @@ $sql = "CREATE TABLE MyObjects (
   )";
 
 if ($conne->query($sql) === TRUE) {
-  echo "MyObjects created successfully";
+ // echo "MyObjects created successfully";
 } else {
-  echo "Error creating table: " . $conne->error;
+//  echo "Error creating table: " . $conne->error;
 }
 
 
@@ -86,6 +86,7 @@ if ($conne->connect_error) {
 
  //sql to create table #3 FOR REVIEWS
  $sql = "CREATE TABLE MyReviews (
+  name VARCHAR(50) NOT NULL,
   latitude VARCHAR(50) NOT NULL,
   longitude VARCHAR(50) NOT NULL,
   review VARCHAR(50) NOT NULL,
@@ -94,9 +95,9 @@ if ($conne->connect_error) {
   )";
 
 if ($conne->query($sql) === TRUE) {
-  echo "MyObjects created successfully";
+// echo "MyObjects created successfully";
 } else {
-  echo "Error creating table: " . $conne->error;
+//  echo "Error creating table: " . $conne->error;
 }
 
 
@@ -116,9 +117,9 @@ if ($conne->connect_error) {
   VALUES ('Ozzy', 'Burger Place', '43.4443842', '-79.7607413')";
 
 if ($conne->query($sql) === TRUE) {
-  echo "Value created successfully";
+ // echo "Value created successfully";
 } else {
-  echo "Error creating table: " . $conne->error;
+//  echo "Error creating table: " . $conne->error;
 }
 
 
@@ -137,9 +138,9 @@ if ($conne->connect_error) {
   VALUES ('Burger Factory', 'mediocre', '45.4443842', '-79.7607413')";
 
 if ($conne->query($sql) === TRUE) {
-  echo "Value created successfully";
+//  echo "Value created successfully";
 } else {
-  echo "Error creating table: " . $conne->error;
+ // echo "Error creating table: " . $conne->error;
 }
 
 
@@ -159,9 +160,9 @@ if ($conne->connect_error) {
  VALUES ('Gladiator', 'Horrible burgers', '47.4443842', '-79.7607413')";
 
 if ($conne->query($sql) === TRUE) {
-  echo "Value created successfully";
+ // echo "Value created successfully";
 } else {
-  echo "Error creating table: " . $conne->error;
+  //echo "Error creating table: " . $conne->error;
 }
 
 

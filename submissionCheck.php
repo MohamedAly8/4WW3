@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+$loggedin = $_SESSION['logged'];
 //declare the errors to be empty at the start
 $error_name = "";
 $error_description = "";
@@ -74,25 +77,27 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-//insert into table
-$sql = "INSERT INTO MyObjects (name, description, latitude, longitude)
-VALUES ('$rest_name', '$rest_desc', '$rest_lat', '$rest_lon')";
-
-//check if record entered successfully
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-
+if ($loggedin) {
+  //insert into table
+  $sql = "INSERT INTO MyObjects (name, description, latitude, longitude)
+  VALUES ('$rest_name', '$rest_desc', '$rest_lat', '$rest_lon')";
+  //check if record entered successfully
+  if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+  } else {
+    //echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+  }
+  else {
+    echo '<p style = "color: red";>User not Logged In. No data created.</p>';
+  }
+  
+  $conn->close();
 }
 }
 //submit was not a post request
 else {
-    echo "Not a Post Request<br>";
+    //echo "Not a Post Request<br>";
 }
 
   

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <?php
 include('createDatabase.php');
-include('results.php');
 
 ?>
 
@@ -20,7 +19,7 @@ include('results.php');
  
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-         <script src="/resources/js/results_sample.js"></script>
+         <script src="resources/js/results_sample.js"></script>
 
          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -58,16 +57,22 @@ include('results.php');
           <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           <a class="nav-link" href="individual_sample.php">Results</a>
-          <a class="nav-link" href="submission.php">Submit a Review</a>
+          <a class="nav-link" href="submission.php">Add Chew</a>
         </div>
         <!-- ml-auto moves the items to the right of the navbar -->
         <div class="navbar-nav  ml-auto">
-            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+            <a class="nav-link active" aria-current="page" href="login.php">Login</a>
             <a class="nav-link" href="signup.php">Signup</a>
           </div>
       </div>
     </div>
   </nav>
+
+  <?php
+include('results.php');
+
+
+?>
 
             
             

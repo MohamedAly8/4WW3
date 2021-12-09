@@ -57,11 +57,11 @@ include('createDatabase.php');
           <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           <a class="nav-link" href="individual_sample.php">Results</a>
-          <a class="nav-link" href="submission.php">Submit a Review</a>
+          <a class="nav-link" href="submission.php">Add Chew</a>
         </div>
         <!-- ml-auto moves the items to the right of the navbar -->
         <div class="navbar-nav  ml-auto">
-          <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+          <a class="nav-link active" aria-current="page" href="login.php">Login</a>
           <a class="nav-link" href="signup.php">Signup</a>
         </div>
       </div>
@@ -85,6 +85,13 @@ include('createDatabase.php');
   <div class = "form123" style = "display:inline;right:20%;height:60%;width:50%;background-color:white;color:white;">
         <!-- Title of the Form-->
         <h1>Add Reviews</h1>
+
+        <div class="form-row col-md-10">
+          <div class="form-group col-md-10">
+            <label for="inputDesc">Name</label>
+            <input type="text" class="form-control" id="inputDesc" placeholder="Name" name = 'name'>
+</div>
+</div>
         
             <!-- Third input LATITUDE Validation: Can fill out this field using button to get coordinates -->
             <div class="form-row col-md-10">

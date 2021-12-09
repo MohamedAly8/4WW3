@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php include ('loginCheck.php');
+include('createDatabase.php');
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +29,7 @@
     <!-- This class makes container span full width of viewport -->
       <div class="container-fluid">
         <!-- Navbar-brand is the "website name" which is on the left side of the navbar, added style to customize vanilla brand -->
-        <a class="navbar-brand" href="index.php">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
+        <a class="navbar-brand" href="index.html">ChewReviews<i style="margin-right: 2px;" class="fa fa-cutlery"
           aria-hidden="true"></i></a>
           <!-- Button for when the navbar is collapsible when at a certain screen width -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,11 +42,11 @@
             <!-- Active makes the menu item always highlighted to add contrast with other buttons -->
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
             <a class="nav-link" href="individual_sample.php">Results</a>
-            <a class="nav-link" href="results_sample.php">Submit a Review</a>
+            <a class="nav-link" href="submission.php">Add Chew</a>
           </div>
           <!-- ml-auto moves the items to the right of the navbar -->
           <div class="navbar-nav  ml-auto">
-              <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+              <a class="nav-link active" aria-current="page" href="login.php">Login</a>
               <a class="nav-link" href="signup.php">Signup</a>
             </div>
         </div>
@@ -60,20 +64,20 @@
         
             <!-- Section for email field -->
           <div class="txt_field">
-            <input type="email" required>
+            <input type="email"  name = "email" required>
             <span></span>
             <label>E-mail</label>
           </div>
           <!-- Section for password field, type password so password does not show -->
           <div class="txt_field">
-            <input type="password" required>
+            <input type="password"  name = "pwd" required>
             <span></span>
             <label>Password</label>
           </div>
           <!-- Forgot password field under password -->
           <div class="pass">Forgot Password?</div>
           <!-- Login confirmation button of type submit -->
-          <input type="submit" value="Login">
+          <input type="submit" name = "Submit" value="Login">
           <div class="signup_link">
               <!-- If user does not have account, redirects them to signup page -->
             Not a member? <a href="signup.php">Signup</a>
